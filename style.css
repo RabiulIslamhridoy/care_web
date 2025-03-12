@@ -1,0 +1,187 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #032b84;
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Multi-Column Dropdown */
+.dropdown-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.dropdown-columns ul {
+    list-style: none;
+}
+
+.dropdown-columns li {
+    padding: 5px 0;
+}
+
+.dropdown-columns a {
+    color: #032b84;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-columns a:hover {
+    text-decoration: underline;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* View All Button */
+.view-all {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Buttons */
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe, .login {
+    background-color: white;
+    color: #032b84;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.subscribe:hover, .login:hover {
+    background-color: #ddd;
+}
+
+.hero-image {
+    background-image: url("./src/images/chapter_1_birth_control_1418968089.webp"); 
+    background-color: #cccccc; 
+    height: 500px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+/* Dropdown Icon */
+.navbar .dropdown > a::after {
+    content: "⯈"; /* Adds the dropdown icon */
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .dropdown:hover > a::after {
+    transform: rotate(90deg); /* Rotates the icon */
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Articles Section */
+.articles {
+    padding: 40px 60px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.article-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.article-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.article-list {
+    flex: 1;
+}
+
+.article {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.article h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.article p {
+    font-size: 0.9rem;
+    color: #555;
+}
