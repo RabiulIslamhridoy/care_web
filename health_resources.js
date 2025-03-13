@@ -7,15 +7,26 @@
 
 
 
+// home page control
 
+function loadContenthome() {
 
-function loadContent(page) {
-    let content = {
+    const container = document.getElementById("main-content");
+    container.innerHTML = ""; // Clear previous cards
+    
+    let data = [
+        { title: "Card 1", description: "This is the first card." },
+        { title: "Card 2", description: "This is the second card." },
+        
+    ];
 
-        'home': `
-        <section class="articles">
+    data.forEach((item, index) => {
+        if(index % 2 === 0) {
+        const card = document.createElement("main-content");
+        card.classList.add("card");
+        card.innerHTML = ` <section class="articles">
         <div class="section-header">
-            <span>1 OF 9 / <strong>OVERVIEW</strong></span>
+            <span>${index+1} OF ${data.length} / <strong>OVERVIEW</strong></span>
             <a href="#" class="view-all">View All</a>
         </div>
 
@@ -48,43 +59,89 @@ function loadContent(page) {
         </div>
     </section>
 
-    <!-- Articles Section 2 (Types) -->
-    <section class="articles">
-        <div class="section-header">
-            <span>2 OF 9 / <strong>TYPES</strong></span>
-            <a href="#" class="view-all">View All</a>
-        </div>
+     `;
+        container.appendChild(card);
+    }
 
-        <div class="article-container">
-            <div class="article-list">
-                <div class="article">
-                    <h3>Birth Control: What Type Is Right for You?</h3>
-                    <p>You have a lot of choices for birth control, from condoms to caps to pills. Find one that
-                        you’re confident with.</p>
+    else{
+        const card = document.createElement("main-content");
+        card.classList.add("card");
+        card.innerHTML = ` 
+        <section class="articles">
+            <div class="section-header">
+                <span>${index+1} OF ${data.length}/ <strong>TYPES</strong></span>
+                <a href="#" class="view-all">View All</a>
+            </div>
+    
+            <div class="article-container">
+                <div class="article-list">
+                    <div class="article">
+                        <h3>Birth Control: What Type Is Right for You?</h3>
+                        <p>You have a lot of choices for birth control, from condoms to caps to pills. Find one that
+                            you’re confident with.</p>
+                    </div>
+                    <div class="article">
+                        <h3>How Effective Are Different Types of Birth Control?</h3>
+                        <p>The effectiveness of some birth control methods depends in part on how carefully you use
+                            them.</p>
+                    </div>
+                    <div class="article">
+                        <h3>Nonhormonal Birth Control</h3>
+                        <p>Nonhormonal birth control is any method that doesn’t affect women’s hormones. But they
+                            might not be ideal for some people.</p>
+                    </div>
+                    <div class="article">
+                        <h3>Best Birth Control for STI and Pregnancy Prevention</h3>
+                        <p>If your goal is to prevent both pregnancy and STIs, there are only a few ways to make
+                            that happen.</p>
+                    </div>
                 </div>
-                <div class="article">
-                    <h3>How Effective Are Different Types of Birth Control?</h3>
-                    <p>The effectiveness of some birth control methods depends in part on how carefully you use
-                        them.</p>
-                </div>
-                <div class="article">
-                    <h3>Nonhormonal Birth Control</h3>
-                    <p>Nonhormonal birth control is any method that doesn’t affect women’s hormones. But they
-                        might not be ideal for some people.</p>
-                </div>
-                <div class="article">
-                    <h3>Best Birth Control for STI and Pregnancy Prevention</h3>
-                    <p>If your goal is to prevent both pregnancy and STIs, there are only a few ways to make
-                        that happen.</p>
+                <div class="article-image">
+                    <img src="./src/images/chapter_1_birth_control_1418968089.webp">
                 </div>
             </div>
-            <div class="article-image">
-                <img src="./src/images/chapter_1_birth_control_1418968089.webp">
-            </div>
-        </div>
-    </section>
-        `,
+        </section>
 
+     `;
+        container.appendChild(card);
+    }
+
+
+
+
+    });
+}
+
+
+
+function loadContenthospitals(){
+    const container = document.getElementById("main-content");
+    container.innerHTML = "";
+
+    const card = document.createElement("main-content");
+    card.classList.add("card");
+    card.innerHTML = ` <h1> Hospitals </h1>
+
+ `;
+    container.appendChild(card);
+  
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+function loadContent(page) {
+    let content = {
+
+     
 
 
 
@@ -97,11 +154,6 @@ function loadContent(page) {
 
 //Hospitals page
 
-
-        'hospitals': `
-            <h2>This is hospital containar</h2>
-            <p>There is found all type of hospital</p>
-        `,
 
 
 
@@ -277,3 +329,4 @@ function loadContent(page) {
     document.getElementById('main-content').innerHTML = content[page];
 }
 
+loadContenthome()

@@ -34,7 +34,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-links li {
@@ -44,8 +44,8 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
-    padding: 10px;
+    font-size: 0.95rem;
+    padding: 5px;
 }
 
 /* Dropdown Menu */
@@ -55,7 +55,7 @@ body {
     top: 100%;
     left: 0;
     background-color: white;
-    width: 600px;
+    width: auto;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -78,12 +78,14 @@ body {
 
 .dropdown-columns a {
     color: #032b84;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-columns a:hover {
+    color: #d2116b;
+    font-size: 0.87rem;
     text-decoration: underline;
 }
 
