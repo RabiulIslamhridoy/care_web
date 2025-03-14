@@ -112,7 +112,7 @@ function loadContenthome() {
     });
 }
 
-
+//Hospitals page
 
 function loadContenthospitals(){
     const container = document.getElementById("main-content");
@@ -128,9 +128,138 @@ function loadContenthospitals(){
 }
   
 
+function family_planning(){
+    const container = document.getElementById("main-content");
+    container.innerHTML = "";
+
+    const card = document.createElement("main-content");
+    card.classList.add("card");
+    card.innerHTML = `<div style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff;">
+
+    <!-- Header -->
+    <header style="background-color: white; margin-left:20% padding: 15px;">
+        <h1 style="color: red; margin-left: 8%; font-size: 36px;">Family Planning</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav style="text-align: center; padding: 10px 0; font-size: 16px;">
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">ভ্রমণ</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">সম্পর্ক</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">সুস্থতা</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">রাশি</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">ফ্যাশন</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">রূপচর্চা</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">গ্রহণযজ্ঞ</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">রসনা</a> •
+        <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">ফোকাসটা</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; padding: 20px;">
+        
+        <!-- Main News -->
+        <div style="width: 45%; padding: 10px; position: relative; display: inline-block;">
+    <img src="./src/images/exampleImage.avif" alt="কোলোরেক্টাল ক্যানসার" 
+         style="display: block; width: 100%; border-radius: 5px; transition: transform 0.3s ease-in-out;"  
+         onmouseover="this.style.transform='scale(1.02)'" 
+         onmouseout="this.style.transform='scale(1)'">
+    
+    <!-- Overlay Text -->
+    <h2 style="position: absolute; bottom: 10px;
+            color: white; padding: 8px 12px; 
+               font-size: 18px; border-radius: 5px; text-align: left;">
+               দীর্ঘ যাত্রায় কেন নেক পিলো ব্যবহার করবেন
+    </h2>
+</div>
+
+        <!-- Side News -->
+        <div style="width: 22%; padding: 10px;">
+            <img src="./src/images/exampleImage.avif" alt="অন্তর্মুখী বনাম বহির্মুখী" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
+                জয়াবর্ধনে-সাঙ্গাকারাদের রেস্তোরাঁর নাম
+            </h2>
+            <p style="font-size: 14px; color: gray;">০১ মার্চ ২০২৫</p>
+            <p style="font-size: 14px; color: #333; line-height: 1.5;">
+                রেস্তোরাঁর নাম মিনিস্ট্রি অব ক্র্যাব। সোজা বাংলায় ‘কাঁকড়া মন্ত্রণালয়’।  
+            </p>
+        </div>
+
+    </div>
+
+</div>
+    
+    
+        </div>
+
+ `;
+    container.appendChild(card);
+    
+family_planning_card();
+
+}
+
+
+function family_planning_card(){
+    const container = document.getElementById("main-content");
+    const card = document.createElement("main-content");
+    card.classList.add("card");
+    card.innerHTML = ` <div style="font-family: Arial, sans-serif; margin-left: 16%;margin-right: 16%; padding: 20px; background-color: #fff;">
+
+    <!-- News Grid Container -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+        <!-- News Item 1 -->
+        <div style="width: 30%; background: white; padding: 15px; border-radius: 5px; 
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+            <img src="./src/images/exampleImage.avif" alt="Restaurant Image" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
+                জয়াবর্ধনে-সাঙ্গাকারাদের রেস্তোরাঁর নাম
+            </h2>
+            <p style="font-size: 14px; color: gray;">০১ মার্চ ২০২৫</p>
+            <p style="font-size: 14px; color: #333; line-height: 1.5;">
+                রেস্তোরাঁর নাম মিনিস্ট্রি অব ক্র্যাব। সোজা বাংলায় ‘কাঁকড়া মন্ত্রণালয়’।  
+            </p>
+        </div>
+
+        <!-- News Item 2 -->
+        <div style="width: 30%; background: white; padding: 15px; border-radius: 5px; 
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+            <img src="./src/images/exampleImage.avif" alt="Travel Image" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
+                দীর্ঘ যাত্রায় কেন নেক পিলো ব্যবহার করবেন
+            </h2>
+            <p style="font-size: 14px; color: gray;">২২ ফেব্রুয়ারি ২০২৫</p>
+            <p style="font-size: 14px; color: #333; line-height: 1.5;">
+                ‘ট্রাভেল পিলো’ নামেও এটি পরিচিত। তবে শুধু ভ্রমণের সময় নয়, অনেকেই অফিসে কাজের সময়ও এটি ব্যবহার করেন।
+            </p>
+        </div>
+
+        <!-- News Item 3 -->
+        <div style="width: 30%; background: white; padding: 15px; border-radius: 5px; 
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+            <img src="./src/images/exampleImage.avif" alt="Hiking Image" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
+                কক্সবাজার থেকে হেঁটে এভারেস্ট জয় করতে যাবেন শাকিল
+            </h2>
+            <p style="font-size: 14px; color: gray;">০৮ ফেব্রুয়ারি ২০২৫</p>
+            <p style="font-size: 14px; color: #333; line-height: 1.5;">
+                ‘গ্রেট হিমালয়া ট্রেইল’ নামে পরিচিত নেপালের পূর্ব থেকে পশ্চিমে ১ হাজার ৭০০ কিলোমিটারের দুর্গম পথ।
+            </p>
+        </div>
+
+    </div>
+</div>
+
+ `;
+    container.appendChild(card);
 
 
 
+}
 
 
 
@@ -223,17 +352,7 @@ function loadContent(page) {
 
 
 
-
-
-
-
-
-        //family_planning page
-        'family_planning': `
-            <h2>Family Planning</h2>
-            <p>Family planning is the ability of individuals and couples to anticipate and attain their desired number of children and the spacing and timing of their births. It is achieved through use of contraceptive methods and the treatment of infertility.</p>
-
-        `,
+      
 
 
 
