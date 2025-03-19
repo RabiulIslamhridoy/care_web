@@ -37,12 +37,12 @@ function loadContenthome() {
             <div class="article-list">
                 <div class="article">
                     <h3>What to Consider When Choosing Birth Control</h3>
-                    <p>The best birth control is the method you’re most likely to use. Here are some other
+                    <p>The best birth control is the method you're most likely to use. Here are some other
                         things to consider as you decide.</p>
                 </div>
                 <div class="article">
                     <h3><a href="#">How and Where to Get Birth Control</a></h3>
-                    <p>You’ve got lots of birth control options. Here’s how to get them, and what to do if costs
+                    <p>You've got lots of birth control options. Here's how to get them, and what to do if costs
                         get in the way.</p>
                 </div>
                 <div class="article">
@@ -52,7 +52,7 @@ function loadContenthome() {
                 </div>
                 <div class="article">
                     <h3>How to Talk to Your Partner About Birth Control</h3>
-                    <p>Birth control can be an awkward topic. But it’s an important heart-to-heart talk to have
+                    <p>Birth control can be an awkward topic. But it's an important heart-to-heart talk to have
                         before sex with your partner.</p>
                 </div>
             </div>
@@ -78,7 +78,7 @@ function loadContenthome() {
                     <div class="article">
                         <h3>Birth Control: What Type Is Right for You?</h3>
                         <p>You have a lot of choices for birth control, from condoms to caps to pills. Find one that
-                            you’re confident with.</p>
+                            you're confident with.</p>
                     </div>
                     <div class="article">
                         <h3>How Effective Are Different Types of Birth Control?</h3>
@@ -87,7 +87,7 @@ function loadContenthome() {
                     </div>
                     <div class="article">
                         <h3>Nonhormonal Birth Control</h3>
-                        <p>Nonhormonal birth control is any method that doesn’t affect women’s hormones. But they
+                        <p>Nonhormonal birth control is any method that doesn't affect women's hormones. But they
                             might not be ideal for some people.</p>
                     </div>
                     <div class="article">
@@ -134,7 +134,8 @@ function family_planning(){
 
     const card = document.createElement("main-content");
     card.classList.add("card");
-    card.innerHTML = `<div style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff;">
+    card.innerHTML = `
+    <div style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff;">
 
     <!-- Header -->
     <header style="background-color: white; margin-left:20% padding: 15px;">
@@ -142,7 +143,7 @@ function family_planning(){
     </header>
 
     <!-- Navigation Menu -->
-    <nav style="text-align: center; padding: 10px 0; font-size: 16px;">
+    <nav style="margin-left:18%; padding: 10px 0; font-size: 16px;">
         <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">ভ্রমণ</a> •
         <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">সম্পর্ক</a> •
         <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">সুস্থতা</a> •
@@ -154,46 +155,169 @@ function family_planning(){
         <a href="#" style="margin: 0 10px; color: black; text-decoration: none;">ফোকাসটা</a>
     </nav>
 
-    <!-- Content Section -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; padding: 20px;">
-        
-        <!-- Main News -->
-        <div style="width: 45%; padding: 10px; position: relative; display: inline-block;">
-    <img src="./src/images/exampleImage.avif" alt="কোলোরেক্টাল ক্যানসার" 
-         style="display: block; width: 100%; border-radius: 5px; transition: transform 0.3s ease-in-out;"  
-         onmouseover="this.style.transform='scale(1.02)'" 
-         onmouseout="this.style.transform='scale(1)'">
+    <div style="display: flex; margin-left:18%; margin-right:14%;margin-top:10px;">
+
+
+    <div class="container" style="border-right: 2px solid #ddd; margin-bottom:10px; ">
+    <div class="flex-container" >
+        <div class="main-news" style="border-right: 2px solid #ddd;">
+            <img src="./src/images/exampleImage.avif" alt="News Image" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.002)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h2>বেশি মাংস, বেশি ডিম দেয় নতুন প্রজাতির এই হাঁস</h2>
+            <p>৮ ঘন্টা আগে</p>
+        </div>
+        <div class="side-news">
+        <img src="./src/images/exampleImage.avif" alt="News Image" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+        onmouseout="this.style.transform='scale(1)'">
+            <h3>ইউরোপে পড়ালেখা এই জনপ্রিয় বৃত্তির সুযোগ কি আপনি নিতে চান</h3>
+            <p>৮ ঘন্টা আগে</p>
+        </div>
+    </div>
     
-    <!-- Overlay Text -->
-    <h2 style="position: absolute; bottom: 10px;
-            color: white; padding: 8px 12px; 
-               font-size: 18px; border-radius: 5px; text-align: left;">
-               দীর্ঘ যাত্রায় কেন নেক পিলো ব্যবহার করবেন
-    </h2>
+    <div class="flex-container" style="margin-top:8px;">
+        <div class="news-item" style="border-right: 1px solid #ddd;">
+            <img src="./src/images/exampleImage.avif" alt="Fashion Show" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>পোশাকে, ফ্যাশনে জন্ম উত্তরের মঞ্চ</h3>
+            <p>৫ ঘন্টা আগে</p>
+        </div>
+        <div class="news-item" style="border-right: 1px solid #ddd;">
+            <img src="./src/images/exampleImage.avif" alt="Scientist" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>প্রথম হওয়া সায়েন্স লেখা-কিভাবে কষ্ট স্বার্থক হলো</h3>
+            <p>৮ ঘন্টা আগে</p>
+        </div>
+        <div class="news-item">
+            <img src="./src/images/exampleImage.avif" alt="Student" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>এআই ব্যবহার করে লোডশেডিং কমাতে চান আইইউবির শিক্ষার্থী হালিমা</h3>
+            <p>৯ ঘন্টা আগে এআই ব্যবহার করে লোডশেডিং কমাতে চান আইইউবির শিক্ষার্থী হালিমা</p>
+        </div>
+    </div>
+    
 </div>
 
-        <!-- Side News -->
-        <div style="width: 22%; padding: 10px;">
-            <img src="./src/images/exampleImage.avif" alt="অন্তর্মুখী বনাম বহির্মুখী" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
-            onmouseout="this.style.transform='scale(1)'">
-            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
-                জয়াবর্ধনে-সাঙ্গাকারাদের রেস্তোরাঁর নাম
-            </h2>
-            <p style="font-size: 14px; color: gray;">০১ মার্চ ২০২৫</p>
-            <p style="font-size: 14px; color: #333; line-height: 1.5;">
-                রেস্তোরাঁর নাম মিনিস্ট্রি অব ক্র্যাব। সোজা বাংলায় ‘কাঁকড়া মন্ত্রণালয়’।  
-            </p>
-        </div>
+<div class="sidebar">
 
+        <img src="./src/images/exampleImage.avif" alt="Scientist" style="padding-bottom:5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+        onmouseout="this.style.transform='scale(1)'">
+        <div style="border-bottom: 3px solid #ddd;"></div>
+        <h3 >সর্বশেষ</h3>
+        <ul >
+            <li style="border-bottom: 2px solid #ddd; margin-top:5px; margin-bottom:5px;">লিভারপুলকে হারিয়ে ৭০ বছর পর ইউরোপে 'গ্যালিপ্সি' নিউজকাস্ট</li>
+            <li style="border-bottom: 2px solid #ddd;  margin-top:5px; margin-bottom:5px;">নির্বাচন বিভ্রান্তির কারণে জনগণ সঠিক সিদ্ধান্ত নিতে পারছে না</li>
+            <li style="border-bottom: 2px solid #ddd;  margin-top:5px; margin-bottom:5px;">নারীদের হারিয়ে 'ব্লুজ' দলের ইনভেস্টমেন্ট বাড়ছে</li>
+            <li style="border-bottom: 2px solid #ddd;  margin-top:5px; margin-bottom:5px;">মতামত: 'ধর্ষণ' শাস্তি ডিএমপি কমান্ডারের ভুল দৃষ্টি</li>
+            <li>মতামত: 'ধর্ষণ' শাস্তি ডিএমপি কমান্ডারের ভুল দৃষ্টি</li>
+        </ul>
     </div>
 
 </div>
     
-    
         </div>
+
+        <div style="border-top: 3px solid #1119f5; margin-left:18%; margin-right:14%;margin-top:10px;">
+
+        </div>
+
+
+
+
+
+
+
+    <div style="margin-left:18%; margin-right:14%;margin-top:10px;">
+    <h2>সর্বশেষ খবর</h2>
+    </div>
+
+    <div class="swiper mySwiper" style="margin-left:18%; margin-right:14%;margin-top:15px;border-bottom: 2px solid #ddd; padding-bottom:8px;">
+    <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+            <img src="./src/images/exampleImage.avif" alt="Slide 1" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>Slide 1 Title</h3>
+            <p>Short description of Slide 1.</p>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+            <img src="./src/images/exampleImage.avif" alt="Slide 2" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>Slide 2 Title</h3>
+            <p>Short description of Slide 2.</p>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+            <img src="./src/images/exampleImage.avif" alt="Slide 3" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>Slide 3 Title</h3>
+            <p>Short description of Slide 3.</p>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+            <img src="./src/images/exampleImage.avif" alt="Slide 4" style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.02)'" 
+            onmouseout="this.style.transform='scale(1)'">
+            <h3>Slide 4 Title</h3>
+            <p>Short description of Slide 4.</p>
+        </div>
+    </div>
+
+    <!-- Pagination & Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+
+
+
+
+
+<div style="border-top: 3px solid #ddd; margin-left:18%; margin-right:14%;margin-top:30px;">
+
+</div>
+
+
+<div style="margin-left:18%; margin-right:14%;margin-top:10px;">
+<h2>আরও খবর</h2>
+</div>
+
+
+
+
+
 
  `;
     container.appendChild(card);
+
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 3, /* Shows 3 slides initially */
+        spaceBetween: 10,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3, /* On tablets, show 3 slides */
+            },
+            480: {
+                slidesPerView: 2, /* On small screens, show 2 slides */
+            },
+            320: {
+                slidesPerView: 1, /* On mobile, show 1 slide */
+            }
+        }
+    });
     
 family_planning_card();
 
@@ -204,55 +328,45 @@ function family_planning_card(){
     const container = document.getElementById("main-content");
     const card = document.createElement("main-content");
     card.classList.add("card");
-    card.innerHTML = ` <div style="font-family: Arial, sans-serif; margin-left: 16%;margin-right: 16%; padding: 20px; background-color: #fff;">
+    card.innerHTML = `
 
-    <!-- News Grid Container -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-
-        <!-- News Item 1 -->
-        <div style="width: 30%; background: white; padding: 15px; border-radius: 5px; 
-                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-            <img src="./src/images/exampleImage.avif" alt="Restaurant Image" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+    <div style="display: flex;flex-direction: column;gap: 20px;align-items: center;margin-left:18%; margin-right:14%;margin-top:30px; padding-left:5%;padding-right:5%;">
+        
+        <div class="news-item-last">
+            <div class="news-text-last">
+                <h3 style="margin: 0; color: #000;">ঈদের কেনাকাটায় ৮টি জরুরি সতর্কতা</h3>
+                <p style="color: #555; margin: 5px 0;">ঈদের কেনাকাটায় কারণে দোকানপাট ভিড়ে... </p>
+                <p style="color: #999; font-size: 14px;">৯ ঘণ্টা আগে</p>
+            </div>
+            <img src="./src/images/exampleImage.avif" alt="Shopping" style=" border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
             onmouseout="this.style.transform='scale(1)'">
-            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
-                জয়াবর্ধনে-সাঙ্গাকারাদের রেস্তোরাঁর নাম
-            </h2>
-            <p style="font-size: 14px; color: gray;">০১ মার্চ ২০২৫</p>
-            <p style="font-size: 14px; color: #333; line-height: 1.5;">
-                রেস্তোরাঁর নাম মিনিস্ট্রি অব ক্র্যাব। সোজা বাংলায় ‘কাঁকড়া মন্ত্রণালয়’।  
-            </p>
+        </div>
+        
+        <div class="news-item-last">
+            <div class="news-text-last">
+                <h3 style="margin: 0; color: #000;">বাড়ির ছেলশিশ্টিকে ঠিকভাবে বড় করছেন তো</h3>
+                <p style="color: #555; margin: 5px 0;">ছোট থেকে শিশুদের শেখা...</p>
+                <p style="color: #999; font-size: 14px;">১২ ঘণ্টা আগে</p>
+            </div>
+            <img src="./src/images/exampleImage.avif" alt="Education" style="border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        </div>
+        
+        <div class="news-item-last">
+            <div class="news-text-last">
+                <h3 style="margin: 0; color: #000;">কেমন হলো হামজা-জামালদের নতুন জার্সি</h3>
+                <p style="color: #555; margin: 5px 0;">২৫ মার্চে ভারত...</p>
+                <p style="color: #999; font-size: 14px;">২৬ ঘণ্টা আগে</p>
+            </div>
+            <img src="./src/images/exampleImage.avif" alt="Jersey" style=" border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
+            onmouseout="this.style.transform='scale(1)'">
         </div>
 
-        <!-- News Item 2 -->
-        <div style="width: 30%; background: white; padding: 15px; border-radius: 5px; 
-                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-            <img src="./src/images/exampleImage.avif" alt="Travel Image" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
-            onmouseout="this.style.transform='scale(1)'">
-            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
-                দীর্ঘ যাত্রায় কেন নেক পিলো ব্যবহার করবেন
-            </h2>
-            <p style="font-size: 14px; color: gray;">২২ ফেব্রুয়ারি ২০২৫</p>
-            <p style="font-size: 14px; color: #333; line-height: 1.5;">
-                ‘ট্রাভেল পিলো’ নামেও এটি পরিচিত। তবে শুধু ভ্রমণের সময় নয়, অনেকেই অফিসে কাজের সময়ও এটি ব্যবহার করেন।
-            </p>
-        </div>
-
-        <!-- News Item 3 -->
-        <div style="width: 30%; background: white; padding: 15px; border-radius: 5px; 
-                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-            <img src="./src/images/exampleImage.avif" alt="Hiking Image" style="width: 100%; border-radius: 5px;transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.07)'" 
-            onmouseout="this.style.transform='scale(1)'">
-            <h2 style="font-size: 18px; margin-top: 10px; color: black;">
-                কক্সবাজার থেকে হেঁটে এভারেস্ট জয় করতে যাবেন শাকিল
-            </h2>
-            <p style="font-size: 14px; color: gray;">০৮ ফেব্রুয়ারি ২০২৫</p>
-            <p style="font-size: 14px; color: #333; line-height: 1.5;">
-                ‘গ্রেট হিমালয়া ট্রেইল’ নামে পরিচিত নেপালের পূর্ব থেকে পশ্চিমে ১ হাজার ৭০০ কিলোমিটারের দুর্গম পথ।
-            </p>
-        </div>
-
+        <button style="display: block; width: 150px; margin: 20px auto; padding: 10px 15px; font-size: 16px; font-weight: bold; color: white; background: linear-gradient(45deg, #ff6600, #ff3300); border: none; border-radius: 25px; cursor: pointer; transition: all 0.3s ease; box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);">
+             Show More
+        </button>
+        
     </div>
-</div>
 
  `;
     container.appendChild(card);
@@ -329,34 +443,6 @@ function loadContent(page) {
 
 
 ,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
 
 
 

@@ -222,3 +222,143 @@ a {
 
 
 
+
+
+
+
+
+
+
+.container {
+    width: 80%;
+    max-width: auto;
+    margin: auto;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    
+}
+.main-news, .side-news, .news-item, .sidebar {
+    background-color: #fff;
+    padding-right: 3px;
+    
+   
+}
+.main-news {
+    width: 100%;
+}
+.side-news {
+    width: 100%;
+}
+.news-item {
+    width: 100%;
+}
+.sidebar {
+    margin-left: 3%;
+    margin-top: 20px;
+    width: 30%;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .main-news { width: 66.5%; }
+    .side-news { width: 32%; }
+    .news-item { width: 33%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Swiper css */
+
+
+/* .swiper {
+    width: 80%;
+    margin: auto;
+} */
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   
+    
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgb(127, 148, 253); 
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* family continer down section css */
+
+
+.news-item-last {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+.news-item-last img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+.news-text-last {
+    flex: 1;
+}
+@media (max-width: 600px) {
+    .news-item-last {
+        flex-direction: column;
+        text-align: center;
+    }
+    .news-item-last img {
+        width: 100%;
+        height: auto;
+    }
+}
